@@ -1,3 +1,5 @@
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -13,10 +15,20 @@ public class Main {
         Ponto ponto = new Ponto(x, y);
         int quadrante = ponto.getQuadrante();
 
+        String resultado;
         if (quadrante == 0) {
-            System.out.println("O ponto está na origem.");
+            resultado = "O ponto está na origem.";
         } else {
-            System.out.println("O ponto está no quadrante " + quadrante);
+            resultado = "O ponto está no quadrante " + quadrante;
+        }
+
+        System.out.println(resultado);
+
+        try (FileWriter writer = new FileWriter("README.md", true)) {
+            writer.write("\n## Resultado\n\n");
+            writer.write(resultado + " (Coordenadas: " + x + ", " + y + ")\n");
+        } catch (IOException e) {
+            System.err.println("Erro ao escrever no arquivo README.md: " + e.getMessage());
         }
     }
 }
