@@ -3,7 +3,7 @@
 ## Descrição
 
 QuadrantePonto é um código que determina o quadrante de um ponto no plano cartesiano. Neste caso, a atividade pedia para que 
-os quadrantes 1 e 2 fossem invertidos em relação ao plano padrão.
+os quadrantes 1 e 2 fossem invertidos em relação ao plano padrão. O código-fonte deste projeto foi totalmente documentado utilizando JavaDocs, facilitando a compreensão e manutenção do sistema.
 
 ## Uso
 

@@ -2,7 +2,15 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
+/**
+ * Classe principal para determinar o quadrante de um ponto no plano cartesiano e registrar o resultado em um arquivo.
+ * O programa solicita repetidamente as coordenadas do ponto até que o usuário decida parar.
+ * @author Nivea Lins
+ */
 public class Main {
+    /**
+     * Método principal que executa o programa.
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         String continuar = "sim";
